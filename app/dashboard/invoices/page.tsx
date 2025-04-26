@@ -6,12 +6,18 @@ import { InvoicesTableSkeleton } from "@/app/ui/skeletons";
 import { Suspense } from "react";
 import { fetchInvoicesPages } from "@/app/lib/data";
 import Pagination from "@/app/ui/invoices/pagination";
+import { Metadata } from "next";
 
 type Props = {
   searchParams?: Promise<{
     query?: string;
     page?: string;
   }>;
+};
+
+// This works but would force us to do individual metadata for each page
+export const metadata: Metadata = {
+  title: "Invoices",
 };
 
 export default async function Page(props: Props) {

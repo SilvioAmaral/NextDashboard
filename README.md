@@ -54,3 +54,6 @@ If you’ve previously created containers with conflicting names or networks, yo
 
 docker stop my-postgres my-pgadmin
 docker rm my-postgres my-pgadmin
+
+
+To login on the website use user@nextmail.com 
